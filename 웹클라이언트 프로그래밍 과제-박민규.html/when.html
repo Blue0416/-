@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    h3{
+        background-color:aqua;
+        color:dodgerblue;
+        text-align:center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 2px solid black;
+    }
+</style>
+
+
+    <title>when we collapse?</title>
+</head>
+<body>
+    <h3><b>출생율을 입력하여 저출산의 심각성 알기</b></h3>
+    <strong><p>출생율 입력하기</p></strong>
+    <p>* 소수점 한자리까지만 입력해주세요</p>
+    <form name="fr">
+        <input type="text" id="num">
+        <input type="button" value="확인" onclick="Main()">
+    </form>
+    <strong>
+        <p id="answer">년 뒤에 대한민국은 소멸될 것입니다</p>
+    </strong>
+    <script>
+    function Main() {
+        var nums = document.getElementById("num").value
+        if(nums=='exit') window.alert('종료')
+        else
+        {
+            nums= 2050+'num'*10
+            PrintAnswer(nums.join())
+        }
+    }
+    </script>
+</body>
+</html>
